@@ -1,0 +1,6 @@
+0 hola
+1 mundo
+2 cruel
+0 nuevamente hola
+1 mundo
+2 chido
