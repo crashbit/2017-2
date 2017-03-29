@@ -5,14 +5,22 @@ public class Cliente{
 
 	public static void main(String args[]){
 		Socket cliente;
-		InputStream entrada;
-		DataInputStream flujo;
+		InputStreamReader entrada;
+		PrintWriter salida;
+		BufferedReader flujo;
+		String cadena;
 
 		try{
 			cliente = new Socket("www.unam.mx", 80);
-			entrada = cliente.getInputStream();
-			flujo = new DataInputStream(entrada);
-			System.out.println(flujo.readUTF());
+			entrada = new InputStreamReader(cliente.getInputStream());
+			salida = new PrintWriter(cliente.getOutputStream(), true);
+			flujo = new BufferedReader(entrada);
+
+			salida.println("get /");
+			while((cadena = flujo.readLine())!=null){
+				System.out.println(cadena);
+			}
+
 			cliente.close();
 
 		}catch(UnknownHostException var){
