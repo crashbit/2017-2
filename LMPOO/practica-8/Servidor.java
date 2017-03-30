@@ -21,8 +21,13 @@ public class Servidor{
 		flujo = new BufferedReader(entrada);
 
 		salida.println("Hola usuario... :) ");
+		salida.println("Teclea tu passwdord: ");
+		cadena = flujo.readLine();
 
+		salida.println("Tecleaste: " + cadena);
+		System.out.println("El usuario tecleo: " + cadena);
 
+		usuario.close();
 	}
 
 
