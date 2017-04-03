@@ -11,7 +11,7 @@ public class Util{
 		cadena = teclado.nextLine();
 		numero = teclado.nextInt();
 		System.out.println(cadena);
-		System.out.println(numero * 3);
+		System.out.println(numero * 3);  
 
 
 	}
