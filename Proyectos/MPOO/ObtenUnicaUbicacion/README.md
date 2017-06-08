@@ -1,7 +1,7 @@
 # Obtiene una sola ubicación a través del GPS en android
-Son 2 archivos:
+Son 3 archivos:
 
-* MainActivity.java: Contiene toda la lógica para poder crear un usuario en Firebase.
-* activity_main.xml: Contiene la información para crear la vista hacia el usuario.
+* MainActivity.java: Contiene toda la logica para usar el GPS y se agrego un bloque para checar los permisos del GPS.
+* activity_main.xml: Muestra la información del GPS.
 * AndroidManifest.xml: Contiene los permisos necesarios para utilizar el GPS
 
